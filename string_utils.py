@@ -1,30 +1,36 @@
 
+
+
+
 def str_len(str_in: str) -> str:
     """
     Given a string parameter, this function should return the length of the parameter.
     """
-    pass  # remove pass statement and implement me
+    return len(str_in)  # remove pass statement and implement me
 
 
 def first_char(str_in: str) -> str:
     """
     Given a string parameter, this function should return the first letter of the parameter.
     """
-    pass  # remove pass statement and implement me
+    return str_in[0]  # remove pass statement and implement me
 
 
 def last_char(str_in: str) -> str:
     """
     Given a string parameter, this function should return the last letter of the parameter..
     """
-    pass  # remove pass statement and implement me
+    return str_in[-1]  # remove pass statement and implement me
 
 
 def input_has_substring(str_in: str, sub_str_in: str) -> bool:
     """
     This function determines if the substring exists within the string. Returns True or False.
     """
-    pass  # remove pass statement and implement me
+    if input_has_substring.find() >= 0:
+        return True
+    if input_has_substring.find() == -1:
+        return False# remove pass statement and implement me
 
 
 def substring(str_in: str, start: int, stop: int) -> str:
@@ -36,13 +42,13 @@ def substring(str_in: str, start: int, stop: int) -> str:
     start -- starting position of the input parameter to start the substring (inclusive)
     stop -- stopping position of the input parameter to stop the substring (exclusive)
     """
-    pass  # remove pass statement and implement me
+    return substring(str_in, 0, -1)  # remove pass statement and implement me
 
 
 def opposite_case(str_in: str) -> str:
     """
     Given a string parameter, this function returns the same string back with each letter having the opposite case.
-    Example: 
+    Example:
     When input = "Python" the function returns "pYTHON"
     """
-    pass  # remove pass statement and implement me
+    return swapcase(str_in) # remove pass statement and implement me

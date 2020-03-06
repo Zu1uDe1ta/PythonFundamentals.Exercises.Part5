@@ -1,3 +1,8 @@
+
+
+
+
+
 def is_palindrome(value: str) -> bool:
     """
     This function determines if a word or phrase is a palindrome
@@ -5,4 +10,7 @@ def is_palindrome(value: str) -> bool:
     :param value: A string
     :return: A boolean
     """
-    pass  # remove pass statement and implement me
+    if  (first_string) == (second_string)[::-1]:
+        return True
+    else:
+        return False# remove pass statement and implement me  # remove pass statement and implement me

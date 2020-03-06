@@ -20,3 +20,11 @@ class TestAnagram(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+def is_anagram(first_string: str, second_string: str) -> bool:
+    """
+    Given two strings, this functions determines if they are an anagram of one another.
+    """
+    if  (first_string) == (second_string)[::-1]:
+        return True
+    else:
+        return False# remove pass statement and implement me
