@@ -61,6 +61,7 @@ def half_list(list_in: List, half: int) -> List:
     print(first_half)
     print(second_half)
 
+
 half_list(z)
   # remove pass statement and implement me
 
@@ -96,7 +97,10 @@ def concatenate_lists(list_a: List, list_b: List) -> List:
     :param list_b: Another list
     :return: A list containing all elements from list_a and list_b
     """
-    return list_a = list_a + list_b  # remove pass statement and implement me
+    list_a = list_a + list_b
+    return list_a
+
+   # remove pass statement and implement me
 
 
 def multiply_list(list_in: List, scalar: int) -> List:
