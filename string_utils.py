@@ -1,54 +1,56 @@
 
-
-
-
+"""
+Given a string parameter, this function should return the length of the parameter.
+"""
 def str_len(str_in: str) -> str:
-    """
-    Given a string parameter, this function should return the length of the parameter.
-    """
-    return len(str_in)  # remove pass statement and implement me
+    return len(str_in)
 
-
+"""
+Given a string parameter, this function should return the first letter of the parameter.
+"""
 def first_char(str_in: str) -> str:
-    """
-    Given a string parameter, this function should return the first letter of the parameter.
-    """
-    return str_in[0]  # remove pass statement and implement me
+    return str_in[0]
 
-
+"""
+Given a string parameter, this function should return the last letter of the parameter..
+"""
 def last_char(str_in: str) -> str:
-    """
-    Given a string parameter, this function should return the last letter of the parameter..
-    """
-    return str_in[-1]  # remove pass statement and implement me
+    return str_in[-1]
 
 
+"""
+This function determines if the substring exists within the string. Returns True or False.
+"""
 def input_has_substring(str_in: str, sub_str_in: str) -> bool:
-    """
-    This function determines if the substring exists within the string. Returns True or False.
-    """
-    if input_has_substring.find() >= 0:
+    if str_in.find(sub_str_in) >= 0:
         return True
-    if input_has_substring.find() == -1:
-        return False# remove pass statement and implement me
+    elif input_has_substring.find() == -1:
+        return False
 
 
+
+"""
+Returns the substring of a string.
+
+Keyword arguments:
+str_in -- the string in which to generate a substring from
+start -- starting position of the input parameter to start the substring (inclusive)
+stop -- stopping position of the input parameter to stop the substring (exclusive)
+"""
 def substring(str_in: str, start: int, stop: int) -> str:
-    """
-    Returns the substring of a string.
-
-    Keyword arguments:
-    str_in -- the string in which to generate a substring from
-    start -- starting position of the input parameter to start the substring (inclusive)
-    stop -- stopping position of the input parameter to stop the substring (exclusive)
-    """
-    return substring(str_in, 0, -1)  # remove pass statement and implement me
+    return substring(str_in, 0, -1)
 
 
+"""
+Given a string parameter, this function returns the same string back with each letter having the opposite case.
+Example:
+When input = "Python" the function returns "pYTHON"
+"""
 def opposite_case(str_in: str) -> str:
-    """
-    Given a string parameter, this function returns the same string back with each letter having the opposite case.
-    Example:
-    When input = "Python" the function returns "pYTHON"
-    """
-    return swapcase(str_in) # remove pass statement and implement me
+    result = []
+    for letter in str_in:
+        if letter.isupper():
+            result.append(letter.lower())
+        else:
+            result.append(letter.upper())
+    return "".join(result)
